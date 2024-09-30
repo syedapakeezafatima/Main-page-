@@ -75,7 +75,13 @@ ul li.active a {
     border-radius: 25px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
+/* Hamburger Icon */
+.hamburger-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
 main {
     
     margin-top: 0;
@@ -206,6 +212,7 @@ main {
 }
 
 .offer-card {
+    flex-wrap: wrap;
     background-color: #252525;
     padding: 20px;
     border-radius: 8px;
@@ -248,8 +255,9 @@ main {
 
 .coffee-description p {
     margin-bottom: 25px;
-    font-size: 17px;
-    line-height: 1.1;
+    font-weight: lighter;
+    font-size: 15px;
+   color: #cccccc;
 
 }
 
@@ -264,13 +272,15 @@ main {
 }
 
 .coffee-cards {
-  
+    
+    gap: 30px;
     display: flex;
     justify-content: space-evenly;
-    width: 50%;
+    width: 55%;
 }
 
 .coffee-card {
+    flex-wrap: wrap;
     background-color: #000;
     padding: 20px;
     width: 30%;
@@ -278,7 +288,7 @@ main {
     text-align: center;
 }
 .coffee-card img {
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .coffee-card h3 {
@@ -324,7 +334,7 @@ main {
 }
 
 .coffee-bean-banner img {
-    opacity: 0.6;
+    opacity: 0.5;
     width: 80%;
     max-width: 1200px; /* Ensures the image doesn't become too large */
     height: auto;
@@ -390,7 +400,7 @@ main {
     padding: 27px;
     border-radius: 10px;
     width: 25%; /* Adjust width as needed */
-    height: 240px; /* Set a fixed height for the cards */
+    height: 270px; /* Set a fixed height for the cards */
     text-align: center;
 }
 
@@ -406,3 +416,188 @@ main {
     margin-top: 10px;
     color: yellow;
 }
+
+/* Newsletter Section */
+.newsletter-section {
+   margin-top: 80px;
+    max-width: 100%;
+    overflow-x: hidden; /* This will prevent the horizontal scroll */
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.newsletter-container {
+    max-width: 100%; /* Ensure the container doesn’t exceed the screen width */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1500px;
+    margin: 10px auto;
+    flex-wrap: wrap; /* Add for responsiveness */
+}
+
+.newsletter-content {
+    flex: 1;
+    text-align: left;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.newsletter-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.newsletter-content p {
+    margin-bottom: 35px;
+    font-size: 1rem;
+    color: #fefbfb;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    border: #080808;
+    border-radius: 4px;
+    width: 300px;
+    margin-right: 25px;
+}
+
+.newsletter-form button {
+    font-size: 15px;
+    background-color: #c66417;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.newsletter-image {
+    flex: 1;
+    text-align: right;
+}
+
+.newsletter-image img {
+    margin-right: 40px;
+    width: 420px;  /* Set your desired width */
+    height: 340px; /* Set your desired height */
+    
+}
+
+
+/* Footer */
+/* General styling */
+.footer-column ul,
+.footer-column ul li,
+.footer-column ul li a {
+    border: none; /* Remove borders from ul, li, a */
+    background: none; /* Ensure no background is applied */
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove padding */
+    display: block; /* Ensure block display */
+}
+
+/* Footer styling */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 12px;
+    margin-top: 50px; /* Adding margin from top */
+}
+
+/* Container for footer content */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Adjusted for better spacing between columns */
+    flex-wrap: wrap;
+    margin-left: 20px; /* Adds space to the left */
+    margin-right: 20px; /* Adds space to the right */
+}
+
+/* Footer column styles */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    
+}
+
+/* Targeting the first column to give it extra margin on the right */
+.footer-column:first-child {
+    margin-right: 20px; /* Adds extra gap between the first column and others */
+}
+
+/* Column header styling */
+.footer-column h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #f7f6f5; /* Only COFFEE title will have orange color */
+}
+
+/* Paragraph and unordered list styles */
+.footer-column p,
+.footer-column ul {
+    font-size: 13px;
+    color: #f8f7f7;
+}
+
+/* List styling */
+.footer-column ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+    font-size: 10px;
+}
+
+/* List item styling */
+.footer-column ul li {
+   
+    font-size: 10px;
+    margin-bottom: 10px;
+    display: block; /* Setting display to block */
+}
+
+/* Anchor styling inside list items */
+.footer-column ul li a {
+    display: block;
+    color: #f4f0f0;
+}
+
+/* Social media section */
+.social-media ul {
+    display: flex;
+    padding: 0;
+}
+
+/* Social media list item */
+.social-media ul li {
+    margin-right: 15px;
+}
+
+/* Social media anchor styling */
+.social-media ul li a {
+    font-size: 10px;
+    color: #ccc;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #f7f5f5;
+    margin-top: 20px;
+    color: #f6f6f6;
+}
+
+
+/* Responsive Media Queries */
