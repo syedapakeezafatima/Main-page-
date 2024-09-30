@@ -177,8 +177,8 @@ main {
     background-color: #252525;
     padding: 20px;
     border-radius: 8px;
-    width: auto;  /* Fixed width for square shape */
-    height: auto; /* Reduced height for the cards */
+    width: auto;  
+    height: auto; 
     text-align: center;
 }
 
